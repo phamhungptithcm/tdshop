@@ -1,0 +1,108 @@
+.hp-container {
+	text-align: center;
+}
+
+.hp-box {
+	position: relative;
+	text-align: center;
+	font-size: small;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
+.hp-container .hp-body img {
+	height: 180px;
+	max-width: 100%;
+}
+
+.hp-box:hover {
+	box-shadow: 0px 0px 10px gray;
+}
+.hp-icon-product{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.hp-box-discount{
+	text-align: center;
+	font-size: small;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+}
+.hp-list-discount .hp-body-discount img {
+	height: 100px;
+	max-width: 96%;
+}
+.hp-box-discount:hover {
+	box-shadow: 0px 0px 10px gray;
+}
+.hp-navbar {
+	background-color: #337ab7;
+}
+
+.hp-company {
+	position: relative;
+	height: 70px;
+}
+.hp-icon {
+	position: absolute;
+	top: 20px;
+}
+.hp-icon-brand img {
+    position: absolute;
+    top: 0px;
+    margin-top: -50px !important;
+    margin-left: -25px !important;
+}
+.hp-text {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+}
+
+.hp-header .hp-icon, a:hover {
+	color: orange;
+}
+
+.nav .nav-navbar li:hover {
+	color: orange;
+}
+.hp-icon i {
+	color: orange;
+}
+.container-space{
+	height: 30px;
+	background-color: white;
+	
+}
+.hp-detail .tab-content a{
+	text-decoration: none;
+}
+.hp-detail{
+	display: inline-block;
+}
+.col-sm-4 .hp-home >img{
+	width: 100%
+}
+.hp-cart button{
+	border:1px solid green;
+}
+.hp-cart button:hover{
+	border:1px solid green;
+}
+.hp-brand{
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+.btn1:hover {
+	background-color: white;
+	border: 1px solid green;
+}
+
+.btn2:hover {
+	background-color: white;
+	border: 1px solid red;
+}
