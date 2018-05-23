@@ -1,14 +1,12 @@
 <%@ page pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>TDSHop</title>
-<script src="Slideshow/js/modernizr.custom.63321.js"></script>
-<script src="Slideshow/js/jquery.catslider.js"></script>
-<link href="Slideshow/css/catslider.css" rel="stylesheet" />
+
 <script>
 	$(function() {
 		showCatSlider('.mi-slider', 5000);
@@ -27,50 +25,31 @@
 <body>
 	<div class="row">
 		<div class="col-sm-8">
-			<div id="carousel-example-generic" class="carousel slide"
+			<div id="carouselExampleControls" class="carousel slide"
 				data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0"
-						class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner text-center" role="listbox">
-					<div class="item active">
-						<img
-							src="images/carousel/home/30_10_2017_10_00_40_HC-Tra-Gop-800-300.png">
-						<div class="carousel-caption">...</div>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<img class="d-block img-fluid" src="images/carousel/home/30_10_2017_10_00_40_HC-Tra-Gop-800-300.png" alt="First slide">
 					</div>
-					<div class="item">
-						<img
-							src="images/carousel/home/20_01_2018_08_49_40_Big-Apple-Visa-800-300.png">
-						<div class="carousel-caption">...</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="images/carousel/home/20_01_2018_08_49_40_Big-Apple-Visa-800-300.png" alt="Second slide">
 					</div>
-					<div class="item">
-						<img
-							src="images/carousel/home/30_12_2017_10_59_38_Oppo-F5-800-300.png">
-						<div class="carousel-caption">...</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="images/carousel/home/30_12_2017_10_59_38_Oppo-F5-800-300.png" alt="Third slide">
 					</div>
-					<div class="item">
-						<img
-							src="images/carousel/home/23_01_2018_09_59_18_big-samsung-gif.gif">
-						<div class="carousel-caption">...</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="images/carousel/home/23_01_2018_09_59_18_big-samsung-gif.gif" alt="Third slide">
 					</div>
+					
 				</div>
-
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic"
+				<a class="carousel-control-prev" href="#carouselExampleControls"
 					role="button" data-slide="prev"> <span
-					class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a> <a class="right carousel-control" href="#carousel-example-generic"
+					class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+					class="sr-only">Previous</span>
+				</a> <a class="carousel-control-next" href="#carouselExampleControls"
 					role="button" data-slide="next"> <span
-					class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
+					class="carousel-control-next-icon" aria-hidden="true"></span> <span
+					class="sr-only">Next</span>
 				</a>
 			</div>
 		</div>
@@ -124,7 +103,8 @@
 								</div>
 								<div class="hp-footerprice">
 									<div>
-										<strong style="color: #DC2020"><fmt:formatNumber value="${p.unitPrice*22800}" maxFractionDigits="0"/>		VNĐ</strong>
+										<strong style="color: #DC2020"><fmt:formatNumber
+												value="${p.unitPrice*22800}" maxFractionDigits="0" /> VNĐ</strong>
 									</div>
 								</div>
 								<div class="hp-icon-product">
@@ -164,7 +144,8 @@
 								</div>
 								<div class="hp-footerprice">
 									<div>
-										<strong style="color: #DC2020"><fmt:formatNumber value="${p.unitPrice*22800}" maxFractionDigits="0"/>		VNĐ</strong>
+										<strong style="color: #DC2020"><fmt:formatNumber
+												value="${p.unitPrice*22800}" maxFractionDigits="0" /> VNĐ</strong>
 									</div>
 								</div>
 							</div>
@@ -181,7 +162,8 @@
 		</div>
 		<div>
 			<c:forEach var="p" items="${items}" begin="0" end="144">
-				<c:if test="${(p.special==true && p.category.id == 3) || (p.special==true && p.category.id == 2)}">
+				<c:if
+					test="${(p.special==true && p.category.id == 3) || (p.special==true && p.category.id == 2)}">
 					<div class="col-sm-3">
 						<div class="hp-container">
 							<div class="hp-box">
@@ -195,7 +177,8 @@
 								</div>
 								<div class="hp-footerprice">
 									<div>
-										<strong style="color: #DC2020"><fmt:formatNumber value="${p.unitPrice*22800}" maxFractionDigits="0"/>		VNĐ</strong>
+										<strong style="color: #DC2020"><fmt:formatNumber
+												value="${p.unitPrice*22800}" maxFractionDigits="0" /> VNĐ</strong>
 									</div>
 								</div>
 							</div>

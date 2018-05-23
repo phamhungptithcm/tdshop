@@ -123,7 +123,7 @@ public class ProductDAOImpl implements ProductDAO{
 
 	@Override
 	public List<Object[]> revenueByProduct1(Integer id) {
-		String hql = "FROM Product where category.id=:cid "
+		String hql = "from Product where category.id=:cid"
 				+ " ORDER BY unitPrice DESC";
 		Query query= factory.getCurrentSession().createQuery(hql);
 		query.setParameter("cid", id);

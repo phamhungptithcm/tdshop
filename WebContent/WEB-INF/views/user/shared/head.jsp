@@ -17,8 +17,7 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <script src="js/bootstrap.min.js"></script>
-<link href="css/mdb.min.css" rel="stylesheet" />
-<script src="js/mdb.min.js"></script>
+
 
 <link href="css/TDshop.css" rel="stylesheet" />
 <script src="js/login.js"></script>
@@ -31,3 +30,7 @@
 <link rel="stylesheet" href="css/jquery-ui.css">
 
 <script src="js/jquery-ui.js"></script>
+
+<script src="js/modernizr.custom.63321.js"></script>
+<script src="js/jquery.catslider.js"></script>
+<link href="css/catslider.css" rel="stylesheet" />

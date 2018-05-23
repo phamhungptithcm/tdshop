@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt"%>
 <c:forEach var="p" items="${items}">
-	<div class="col-sm-3">
+	<div class="col-sm-12">
 		<div class="hp-container">
 			<div class="hp-box">
 				<div class="hp-body">

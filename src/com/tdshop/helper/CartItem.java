@@ -1,5 +1,6 @@
 package com.tdshop.helper;
 
+import com.tdshop.model.Product;
 
 public class CartItem {
 	Integer id;

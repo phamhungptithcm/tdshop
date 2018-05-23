@@ -1,5 +1,4 @@
 <%@ page pageEncoding="utf-8"%>
-<c:set var="cart" value="${sessionScope['scopedTarget.cartService']}"/>
 <div class="row">
 	<div class="hp-company col-sm-4">
 		<div class="hp-icon-brand">
